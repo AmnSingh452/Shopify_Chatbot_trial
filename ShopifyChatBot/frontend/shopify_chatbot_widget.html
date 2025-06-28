@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Chatbot Widget</title>
+    <link rel="stylesheet" href="shopify_chatbot_widget.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- Chatbot Widget Container -->
+    <div id="shopify-chatbot-widget">
+        <!-- Chat Toggle Button -->
+        <button id="chat-toggle-button" class="chat-button">
+            <span class="material-symbols-outlined">chat</span>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="chat-window-hidden">
+            <div class="chat-header">
+                <h3>Shopify Assistant</h3>
+                <button id="chat-close-button" class="close-button">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be appended here -->
+                <div class="message bot-message">
+                    Hello! How can I assist you today?
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="chat-send-button" class="send-button">
+                    <span class="material-symbols-outlined">send</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="shopify_chatbot_widget.js"></script>
+
+</body>
+</html> 
